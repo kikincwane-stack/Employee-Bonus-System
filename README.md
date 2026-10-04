@@ -3,9 +3,9 @@ Employee Bonus Management System - C++ Assignment. Calculates bonus based on per
 A C++ console program that calculates an employee's total bonus and net pay based on performance rating, department, and years of service.
 
 ## Bonus Rules Implemented
-- Rating (if/else + toupper): A = 20%, B = 10%, C = 5% of basic salary
-- Department (switch): IT = R1000, HR = R800, Finance = R1200, Others = R500
-- Years of Service: >5 years = R2000, 3-5 years = R1000
+- Rating (if/else): 1 = 0%, 2 = 3%, 3 = 8%, 4 = 15%, 5 = 25% of basic salary
+- Department (switch and toupper): 'I' for IT = R1000, 'H' for HR = R500, 'F' for Finance = R800 and 'S' for Sales = Add 5% of Salary as bonus.
+- Years of Service: >5 years = Adds 2% loyalty bonus.
 
 ## How to Compile and Run
 g++ main.cpp -o payroll
@@ -15,16 +15,16 @@ On Windows: payroll.exe
 ## Example Input and Output
 Input:
 Enter salary: 20000
-Enter rating: B
+Enter rating(1-5): 5
 Enter department: IT
 Enter years: 6
 
 Output:
-Rating Bonus: R2000.00
+Rating Bonus: R5000.00
 Dept Bonus: R1000.00
 Years Bonus: R2000.00
-Total Bonus: R5000.00
-Net Pay: R25000.00
+Total Bonus: R8000.00
+Net Pay: R28000.00
 
 ## Student Details
 Name: Patricia Ncwane
